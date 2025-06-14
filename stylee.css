@@ -1,0 +1,12 @@
+h1{
+    color: red;
+    background-color: blue;
+}
+body{
+   background-color:  paleturquoise;
+}
+button{
+    background-color: yellow;
+    color: black;
+    background-attachment: fixed;
+}
