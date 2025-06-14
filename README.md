@@ -20,4 +20,4 @@ A simple interactive Stone-Paper-Scissors game built using HTML, CSS, and JavaSc
 
 ---
 
-🔗 **[Live Preview (optional)]** – You can deploy it on GitHub Pages or Netlify!
+🔗 **[Live Preview (https://riksingha001.github.io/stone.pep/)
