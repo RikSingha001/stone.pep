@@ -1,12 +1,101 @@
-h1{
-    color: red;
-    background-color: blue;
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
-body{
-   background-color:  paleturquoise;
+
+h1 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
 }
-button{
-    background-color: yellow;
-    color: black;
-    background-attachment: fixed;
+
+/* Fix h1 closing tag typo in HTML: <hi> → <h1> */
+
+.choices {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.choice {
+    width: 120px;
+    height: 120px;
+    border: 4px solid #0077cc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+    background-color: #e6f0fa;
+}
+
+.choice img {
+    width: 70%;
+    height: auto;
+    pointer-events: none;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+.score {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.score p:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0077cc;
+}
+
+.msg-container {
+    margin-top: 20px;
+    background-color: #0077cc;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+    .choices {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .choice {
+        width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .msg-container {
+        font-size: 1.2rem;
+    }
 }
